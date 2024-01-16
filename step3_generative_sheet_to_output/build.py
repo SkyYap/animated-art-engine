@@ -195,6 +195,21 @@ def generate_gif_gifski(
         **kwargs,
     )
 
+# def generate_gif_gifski(
+#     output_directory, temp_img_folder, gif_name, gif_width, gif_height, kwargs
+# ):
+#     subprocess.run(
+#     f"gifski -o {os.path.join(output_directory, gif_name)} "
+#     f"-r={fps} "
+#     f"-Q={quality} "
+#     f"-W={gif_width} "
+#     f"-H={gif_height} "
+#     f"--repeat={0 if loop_gif else -1} "
+#     f"{temp_img_folder}/*.png ",
+#     shell=True,
+#     **kwargs,
+#     )
+
 
 def convert_pngs_to_output(
     file_name: str,
